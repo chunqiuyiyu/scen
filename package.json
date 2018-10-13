@@ -1,0 +1,33 @@
+{
+  "name": "scen",
+  "version": "1.0.0",
+  "description": "Create sections in the terminal.",
+  "main": "src/index.js",
+  "keywords": [
+    "cli",
+    "terminal",
+    "console",
+    "ascii",
+    "section"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "author": "chunqiuyiyu <chunqiuyiyu@outlook.com> (https://www.chunqiuyiyu.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunqiuyiyu/scen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chunqiuyiyu/scen/issues"
+  },
+  "homepage": "https://github.com/chunqiuyiyu/scen#readme"
+}
