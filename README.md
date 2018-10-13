@@ -27,7 +27,7 @@ console.log(
     titleAlign: 'center', style: 'classic'
   })
 )
-
+```
 That should print out:
 ```
 +------------Scen------------+
