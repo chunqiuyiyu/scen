@@ -1,6 +1,5 @@
 # Scen [![Travis (.org)](https://img.shields.io/travis/chunqiuyiyu/scen.svg?style=flat-square)](https://travis-ci.org/chunqiuyiyu/scen)
 
-```
 ┌─Scen─────────────────────────────────┐
 │                                      │
 │                                      │
@@ -8,7 +7,6 @@
 │                                      │
 │                                      │
 └──────────────────────────────────────┘
-```
 
 ## Installation
 ```js
