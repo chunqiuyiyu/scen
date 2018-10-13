@@ -8,7 +8,7 @@
     "terminal",
     "console",
     "ascii",
-    "section"
+    "sections"
   ],
   "engines": {
     "node": ">=8"
