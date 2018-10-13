@@ -27,14 +27,15 @@ console.log(
     titleAlign: 'center', style: 'classic'
   })
 )
-/*
+
+That should print out:
+```
 +------------Scen------------+
 |                            |
 |    The quick brown fox     |
 |  jumps over the lazy dog.  |
 |                            |
 +----------------------------+
-*/
 ```
 ## API
 
