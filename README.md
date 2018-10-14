@@ -52,7 +52,7 @@ Height of section. Default is `0`.
 #### style
 Style of section border. Default is `single`. 
 
-You can use `single`, `double`, `round`, `single-double`, `double-single` or `classic`. If you want to custum the characters, please modify the [code](lib/border.js).
+You can use `single`, `double`, `round`, `single-double`, `double-single` or `classic`. If you want to customize the characters, please modify the [code](lib/border.js).
 
 #### padding
 Text padding in section. Default is `'0'`. Use this option like [CSS padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding).
