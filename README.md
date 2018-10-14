@@ -1,13 +1,15 @@
 # Scen [![Travis (.org)](https://img.shields.io/travis/chunqiuyiyu/scen.svg?style=flat-square)](https://travis-ci.org/chunqiuyiyu/scen)
+> Create sections in the terminal.
 
 ```
-╭─Scen─────────────────────────────────╮
-│                                      │
-│                                      │
-│   Create sections in the terminal.   │
-│                                      │
-│                                      │
-╰──────────────────────────────────────╯
++-Scen-------------------------+
+|                              |
+|                              |
+|     The quick brown fox      |
+|   jumps over the lazy dog.   |
+|                              |
+|                              |
++------------------------------+
 ```
 
 ## Installation
@@ -23,20 +25,11 @@ const text = 'The quick brown fox \njumps over the lazy dog.'
 
 console.log(
   scen(text, { 
-    title: 'Scen', padding: '1', textAlign: 'center',
-    titleAlign: 'center', style: 'classic'
+    title: 'Scen', padding: '1', textAlign: 'center', style: 'classic'
   })
 )
 ```
-That should print out:
-```
-+------------Scen------------+
-|                            |
-|    The quick brown fox     |
-|  jumps over the lazy dog.  |
-|                            |
-+----------------------------+
-```
+
 ## API
 
 scen(text, [options])

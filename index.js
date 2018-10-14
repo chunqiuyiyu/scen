@@ -1,11 +1,11 @@
-const border = require('./border')
+const border = require('./lib/border')
 const {
   EOL,
   PAD,
   parsePadding,
   getOptions,
   centerText
-} = require('./utils')
+} = require('./lib/utils')
 
 module.exports = (text, options) => {
   let result = ''
