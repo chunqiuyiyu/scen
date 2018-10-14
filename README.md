@@ -2,14 +2,14 @@
 > Create sections in the terminal.
 
 ```
-+-Scen-------------------------+
-|                              |
-|                              |
-|     The quick brown fox      |
-|   jumps over the lazy dog.   |
-|                              |
-|                              |
-+------------------------------+
++-Scen---------------------------------+
+|                                      |
+|                                      |
+|         The quick brown fox          |
+|       jumps over the lazy dog.       |
+|                                      |
+|                                      |
++--------------------------------------+
 ```
 
 ## Installation
@@ -25,7 +25,7 @@ const text = 'The quick brown fox \njumps over the lazy dog.'
 
 console.log(
   scen(text, { 
-    title: 'Scen', padding: '1', textAlign: 'center', style: 'classic'
+    title: 'Scen', padding: '2 6', textAlign: 'center', style: 'classic'
   })
 )
 ```
