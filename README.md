@@ -89,7 +89,7 @@ console.log(scen("Hello, world!", { height: 3 }));
 #### style
 Style of section border. Default is `single`. 
 
-You can use `single`, `double`, `round`, `single-double`, `double-single` or `classic`. If you want to customize the characters, please modify the [code](lib/border.js).
+You can use `single`, `double`, `round`, `single-double`, `double-single`, `classic`, `stars` or `fenced`. If you want to customize the characters, please modify the [code](lib/border.js).
 
 ```javascript
 console.log(scen("Hello, world!", { style: "stars", padding: "1" }));
