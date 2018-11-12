@@ -79,24 +79,24 @@ module.exports = (text, options) => {
   result += bl + h.repeat(total) + br
 
   // Add left margin
-  let resultLeftMargin = "";
+  let resultLeftMargin = ''
   result.split(EOL).forEach(line => {
-    let tempLine = "";
-    for (let i = 0; i < marginLeft; i++) tempLine += " ";
-    resultLeftMargin += tempLine + line + EOL;
-  });
+    let tempLine = ''
+    for (let i = 0; i < marginLeft; i++) tempLine += ' '
+    resultLeftMargin += tempLine + line + EOL
+  })
 
   // Add top margin
-  let resultTopMargin = "";
-  for (let i = 0; i < marginTop; i++) resultTopMargin += EOL;
+  let resultTopMargin = ''
+  for (let i = 0; i < marginTop; i++) resultTopMargin += EOL
 
   // Add bottom margin
-  let resultBottomMargin = "";
-  for (let i = 0; i < marginBottom; i++) resultBottomMargin += EOL;
+  let resultBottomMargin = ''
+  for (let i = 0; i < marginBottom; i++) resultBottomMargin += EOL
 
-  let realResult = resultTopMargin + resultLeftMargin;
-  realResult = realResult.substr(0, realResult.length - 1);
-  realResult += resultBottomMargin;
+  let realResult = resultTopMargin + resultLeftMargin
+  realResult = realResult.substr(0, realResult.length - 1)
+  realResult += resultBottomMargin
 
-  return realResult;
+  return realResult
 }
