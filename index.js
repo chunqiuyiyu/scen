@@ -20,7 +20,10 @@ module.exports = (text, options) => {
     title,
     padding,
     textAlign,
-    titleAlign
+    titleAlign,
+    marginLeft,
+    marginTop,
+    marginBottom
   } = myOptions
 
   let max = Math.max.apply(null, [title.length, width, Math.max.apply(null, arr)])
@@ -73,6 +76,27 @@ module.exports = (text, options) => {
   result += hr.repeat(boxHeight - strArr.length)
   result += hr.repeat(pb)
 
-  result += bl + h.repeat(total) + br + EOL
-  return result
+  result += bl + h.repeat(total) + br
+
+  // Add left margin
+  let resultLeftMargin = "";
+  result.split(EOL).forEach(line => {
+    let tempLine = "";
+    for (let i = 0; i < marginLeft; i++) tempLine += " ";
+    resultLeftMargin += tempLine + line + EOL;
+  });
+
+  // Add top margin
+  let resultTopMargin = "";
+  for (let i = 0; i < marginTop; i++) resultTopMargin += EOL;
+
+  // Add bottom margin
+  let resultBottomMargin = "";
+  for (let i = 0; i < marginBottom; i++) resultBottomMargin += EOL;
+
+  let realResult = resultTopMargin + resultLeftMargin;
+  realResult = realResult.substr(0, realResult.length - 1);
+  realResult += resultBottomMargin;
+
+  return realResult;
 }

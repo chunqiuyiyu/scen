@@ -42,7 +42,7 @@ The text which you want to show in section.
 How to show text in section, possible values are as follows:
 
 ```javascript
-{[title], [width], [height], [style], [padding], [textAlign], [titleAlign]}
+{[title], [width], [height], [style], [padding], [textAlign], [titleAlign], [marginTop], [marginLeft], [marginBottom]}
 ``` 
 
 #### title
@@ -147,6 +147,52 @@ console.log(scen("Hello, world!", { title: "Hi there!", titleAlign: "right", wid
 ┌────────────Hi there!─┐
 │Hello, world!         │
 └──────────────────────┘
+*/
+```
+
+#### marginLeft
+
+Specifies the left offset for the section.
+
+```javascript
+console.log(scen("Hello, world!", { marginLeft: 3 }));
+
+/*
+   ┌─────────────┐
+   │Hello, world!|
+   └─────────────┘
+*/
+```
+
+#### marginTop
+
+Specifies the top offset for the section.
+
+```javascript
+console.log(scen("Hello, world!", { marginTop: 2 }));
+
+/*
+
+
+┌─────────────┐
+│Hello, world!|
+└─────────────┘
+*/
+```
+
+#### marginBottom
+
+Specifies the bottom offset for the section.
+
+```javascript
+console.log(scen("Hello, world!", { marginBottom: 2 }));
+
+/*
+┌─────────────┐
+│Hello, world!|
+└─────────────┘
+
+
 */
 ```
 
