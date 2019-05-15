@@ -42,7 +42,10 @@ The text which you want to show in section.
 How to show text in section, possible values are as follows:
 
 ```javascript
-{[title], [width], [height], [style], [padding], [textAlign], [titleAlign], [marginTop], [marginLeft], [marginBottom]}
+{
+  [title], [width], [height], [style], [padding],
+  [textAlign], [titleAlign], [marginTop], [marginLeft], [marginBottom]
+}
 ``` 
 
 #### title
